@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+	font-family: "Century Gothic";
+	src: url(./fonts/centurygothic_bold.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+	max-width: 952px;
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+
+header {
+	height: 127px;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	font-size: 13px;
+	position: absolute;
+	z-index: 2;
+}
+
+.nav_list {
+	display: flex;
+	gap: 20px;
+	padding: 0 37.5px;
+	font-weight: 500;
+}
+
+li {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	color: #2e2e2e;
+}
+
+.drop_icon {
+	display: inline;
+}
+
+.head_acselerator {
+	padding: 11.5px 20px;
+	color: white;
+	border-radius: 6px;
+	background-color: #be252a;
+}
+
+.head_requisition {
+	margin: 0 12px;
+	padding: 11.5px 20px;
+	color: white;
+	border-radius: 6px;
+	background-color: #4cae4c;
+}
+
+.list_ru {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#present {
+	position: relative;
+	height: 846px;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(217, 217, 217, 1) 100%
+	);
+}
+
+.present_back {
+	position: absolute;
+	left: 50%;
+	top: 220px;
+	transform: translateX(-15%);
+}
+
+.present__text {
+	width: 384px;
+	margin: 247px 0 0 0;
+}
+
+.present__text h1 {
+	font-size: 54px;
+	font-family: "Century Gothic";
+	font-weight: 700;
+}
+
+.present__info {
+	z-index: 2;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	background-color: white;
+	padding: 32px;
+	border-radius: 12px;
+	gap: 48px;
+	box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.15);
+}
+
+.info__el {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.el__text {
+	display: flex;
+	flex-direction: column;
+}
+
+.el__num {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.el_desc {
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.el_icon_cont {
+	width: 41px;
+	height: 41px;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+}
+
