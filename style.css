@@ -45,8 +45,20 @@ a {
 	color: #2e2e2e;
 }
 
+.list__drop {
+	display: inline-flex;
+}
+
 .drop_icon {
-	display: inline;
+	display: inline-flex;
+}
+
+.drop__list {
+	transform: translate(0px, 29px);
+	position: absolute;
+	display: flex;
+	gap: 15px;
+	flex-direction: column;
 }
 
 .head_acselerator {
@@ -73,11 +85,22 @@ a {
 #present {
 	position: relative;
 	height: 846px;
+	overflow: hidden;
 	background: linear-gradient(
 		180deg,
 		rgba(255, 255, 255, 1) 0%,
 		rgba(217, 217, 217, 1) 100%
 	);
+}
+
+.rounder {
+	position: absolute;
+	background-color: #ffffff;
+	width: 120vw;
+	height: 400px;
+	bottom: -300px;
+	left: -10%;
+	border-radius: 50%;
 }
 
 .present_back {
