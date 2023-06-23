@@ -113,6 +113,9 @@ a {
 .present__text {
 	width: 384px;
 	margin: 247px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
 }
 
 .present__text h1 {
@@ -165,3 +168,27 @@ a {
 	border-radius: 8px;
 }
 
+#forwho {
+	margin: 69px 0 128px 0;
+}
+
+.forwho__head {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.forwho__head a {
+	background-color: #be252a;
+	color: white;
+	padding: 13.5px 24px;
+	border-radius: 6px;
+	font-size: 13px;
+}
+
+.forwho__head h2 {
+	font-size: 54px;
+	font-weight: 700;
+	font-family: "Century Gothic";
+}
