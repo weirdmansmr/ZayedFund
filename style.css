@@ -31,7 +31,6 @@ header {
 
 .nav_list {
 	display: flex;
-	gap: 20px;
 	padding: 0 37.5px;
 	font-weight: 500;
 }
@@ -43,6 +42,16 @@ li {
 a {
 	text-decoration: none;
 	color: #2e2e2e;
+}
+
+.nav_list a {
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.nav_list a:hover {
+	color: white;
+	background-color: #4cae4c;
 }
 
 .list__drop {
@@ -172,11 +181,16 @@ a {
 	margin: 69px 0 128px 0;
 }
 
+.forwho__vertical {
+	display: flex;
+	flex-direction: column;
+}
+
 .forwho__head {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .forwho__head a {
@@ -191,4 +205,64 @@ a {
 	font-size: 54px;
 	font-weight: 700;
 	font-family: "Century Gothic";
+}
+
+.forwho__grid {
+	margin: 44px 0 0 0;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 1fr 1fr;
+	gap: 40px;
+	grid-template-areas:
+		"one one one two two two two"
+		"three three three three four four four";
+}
+
+.grid__one {
+	grid-area: one;
+}
+.grid__two {
+	grid-area: two;
+}
+.grid__three {
+	grid-area: three;
+}
+.grid__four {
+	grid-area: four;
+}
+
+.grid__el {
+	padding: 32px 32px 49px 32px;
+	border: 1px solid #39693926;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.grid__el img {
+	width: 41px;
+	height: 41px;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	padding: 9px;
+}
+
+.grid__el h3 {
+	font-family: "Century Gothic";
+	font-size: 24px;
+}
+
+.grid__el p {
+	color: #2e2e2e99;
+	font-size: 14px;
+}
+
+.grid__two,
+.grid__three {
+	padding-right: calc(98px + 32px);
 }
