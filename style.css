@@ -106,11 +106,7 @@ a {
 	position: relative;
 	height: 846px;
 	overflow: hidden;
-	background: linear-gradient(
-		180deg,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(217, 217, 217, 1) 100%
-	);
+	background: radial-gradient(circle 420px at 63% 60%, #2FB14C80, #396939)
 }
 
 .rounder {
@@ -125,12 +121,13 @@ a {
 
 .present_back {
 	position: absolute;
-	left: 50%;
-	top: 220px;
+	left: 55%;
+	top: 150px;
 	transform: translateX(-15%);
 }
 
 .present__text {
+	color: white;
 	width: 384px;
 	margin: 247px 0 0 0;
 	display: flex;
