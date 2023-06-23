@@ -46,6 +46,7 @@ a {
 
 .nav_list a {
 	padding: 10px;
+	transition: 0.2s;
 	border-radius: 6px;
 }
 
@@ -58,14 +59,24 @@ a {
 	display: inline-flex;
 }
 
+.list__drop:hover .drop__list {
+	display: flex;
+}
+
+.list__drop:hover .drop_icon {
+	transform: rotate(0deg);
+}
+
 .drop_icon {
+	transition: 0.2s;
 	display: inline-flex;
+	transform: rotate(180deg);
 }
 
 .drop__list {
 	transform: translate(0px, 29px);
 	position: absolute;
-	display: flex;
+	display: none;
 	gap: 15px;
 	flex-direction: column;
 }
