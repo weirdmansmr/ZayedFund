@@ -33,6 +33,7 @@ header {
 	display: flex;
 	padding: 0 37.5px;
 	font-weight: 500;
+	color: white;
 }
 
 li {
@@ -41,7 +42,7 @@ li {
 
 a {
 	text-decoration: none;
-	color: #2e2e2e;
+	color: #ffffff;
 }
 
 .nav_list a {
@@ -82,21 +83,38 @@ a {
 }
 
 .head_acselerator {
+	transition: 0.2s;
 	padding: 11.5px 20px;
 	color: white;
 	border-radius: 6px;
 	background-color: #be252a;
+	border: 1px solid transparent;
+}
+
+.head_acselerator:hover,
+.head_acselerator:active {
+	background-color: transparent;
+	border: 1px solid #be252a;
 }
 
 .head_requisition {
+	transition: 0.2s;
 	margin: 0 12px;
 	padding: 11.5px 20px;
 	color: white;
 	border-radius: 6px;
-	background-color: #4cae4c;
+	background-color: #5d925d;
+	border: 1px solid transparent;
+}
+
+.head_requisition:hover,
+.head_requisition:active {
+	background-color: transparent;
+	border: 1px solid #5d925d;
 }
 
 .list_ru {
+	color: white;
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -106,7 +124,7 @@ a {
 	position: relative;
 	height: 846px;
 	overflow: hidden;
-	background: radial-gradient(circle 420px at 63% 60%, #2FB14C80, #396939)
+	background: radial-gradient(circle 420px at 63% 60%, #2fb14c80, #396939);
 }
 
 .rounder {
