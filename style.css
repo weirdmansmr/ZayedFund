@@ -680,3 +680,58 @@ h2 {
 	color: #be252a;
 	border: 1px solid #be252a;
 }
+
+.ourp__list {
+	display: flex;
+	gap: 50px;
+	flex-direction: column;
+	margin: 44px 0 0 0;
+}
+
+.ourp_list_item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 47px;
+}
+
+.ourp_list_item img {
+	border-radius: 12px;
+}
+
+.ourp_item_text {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 12px;
+}
+
+.ourp_item_text h3 {
+	font-size: 36px;
+	font-family: "Century Gothic";
+	letter-spacing: -0.5px;
+	width: 90%;
+}
+
+.ourp_item_text p {
+	font-size: 17px;
+	letter-spacing: -0.7px;
+	line-height: 25px;
+}
+
+.ourp_item_text a {
+	color: #be252a;
+	background-color: #f8e9ea;
+	border-radius: 6px;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 12px 24px;
+	transition: 0.2s;
+	margin: 8px 0 0 0;
+}
+
+.ourp_item_text a:hover,
+.ourp_item_text a:active {
+	color: #fff;
+	background-color: #be252a;
+}
