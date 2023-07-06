@@ -110,109 +110,108 @@
 		</header>
 
 		<main>
-			<div class="wrapper">
-				<section id="news_item">
-					<div class="ni_head_cont">
-						<ol class="breadcrumb">
-							<li><a href="./index.html">Главная</a></li>
-							<li><a href="./news.html">Новости</a></li>
-							<li class="ni_bc_active">
-								Фонд имени Шейха Зайеда инвестирует в системы обучения
-								сотрудников киберграмотности
-							</li>
-						</ol>
-						<h2>
-							Фонд имени Шейха Зайеда инвестирует в системы обучения сотрудников
-							киберграмотности
-						</h2>
-						<time>05 мая 2023</time>
-					</div>
-					<div class="ni_text">
-						<img src="./img/news/news1.png" alt="" />
-						<p>
-							Lorem ipsum dolor sit amet consectetur. Id arcu sed neque massa
-							vitae a purus vulputate. Viverra sit pellentesque ultrices
-							ultrices amet nunc morbi aliquam non. Platea risus viverra nec
-							pretium. Sollicitudin mollis faucibus ut faucibus sed ornare.
-							Ultrices magnis fermentum ac tempor viverra elementum. Aliquet
-							mauris elementum elementum tempus semper ullamcorper integer
-							nascetur eget. Ultrices feugiat arcu et justo. Turpis mauris felis
-							faucibus aliquam quisque et ut. Viverra neque molestie auctor ut
-							consequat quam. Lorem feugiat amet egestas nunc. Pretium tempor
-							justo aliquet feugiat et. A quam scelerisque egestas etiam non a
-							eu. In ac amet ut eget sed. Duis hendrerit commodo sed nulla
-							sapien.
-						</p>
-						<p>
-							Viverra neque molestie auctor ut consequat quam. Lorem feugiat
-							amet egestas nunc. Pretium tempor justo aliquet feugiat et. A quam
-							scelerisque egestas etiam non a eu. In ac amet ut eget sed. Duis
-							hendrerit commodo sed nulla sapien. Adipiscing rhoncus aenean enim
-							sed sed nibh urna. Vulputate et vitae vitae tristique nisl eros.
-							Urna amet egestas cursus placerat ultrices eu nullam nullam.
-							Scelerisque vulputate euismod tortor ipsum pellentesque mauris.
-							Molestie id in magna magna adipiscing suspendisse velit vel sed.
-						</p>
-						<p>
-							Lorem feugiat amet egestas nunc. Pretium tempor justo aliquet
-							feugiat et. A quam scelerisque egestas etiam non a eu. In ac amet
-							ut eget sed. Duis hendrerit commodo sed nulla sapien. Adipiscing
-							rhoncus aenean enim sed sed nibh urna. Vulputate et vitae vitae
-							tristique nisl eros. Urna amet egestas cursus placerat ultrices eu
-							nullam nullam. Scelerisque vulputate euismod tortor ipsum
-							pellentesque mauris. Molestie id in magna magna adipiscing
-							suspendisse velit vel sed.
-						</p>
-						<p>
-							Viverra neque molestie auctor ut consequat quam. Lorem feugiat
-							amet egestas nunc. Pretium tempor justo aliquet feugiat et. A quam
-							scelerisque egestas etiam non a eu. In ac amet ut eget sed. Duis
-							hendrerit commodo sed nulla sapien. Adipiscing rhoncus aenean enim
-							sed sed nibh urna. Vulputate et vitae vitae tristique nisl eros.
-							Urna amet egestas cursus placerat ultrices eu nullam nullam.
-							Scelerisque vulputate euismod tortor ipsum pellentesque mauris.
-							Molestie id in magna magna adipiscing suspendisse velit vel sed.
-						</p>
-						<img src="./img/news/news1.png" alt="" />
-					</div>
-				</section>
-				<section id="same_news">
-					<h2>Похожие новости</h2>
-					<div class="news_el">
-						<img src="./img/news/news1.png" alt="" />
-						<div class="news_el_text">
-							<h3>
-								Фонд имени Шейха Зайеда инвестирует в системы обучения
-								сотрудников киберграмотности
-							</h3>
-							<a href="./news-item.html">Подробнее</a>
-							<time>05 мая 2023</time>
+			<section id="contact">
+				<div class="wrapper">
+					<h2>Контакты</h2>
+					<div class="contact_grid">
+						<div class="contact_grid_form">
+							<h3>Напишите нам</h3>
+							<form name="sentMessage" id="contactPageForm" novalidate>
+								<input
+									type="text"
+									id="CPname"
+									placeholder="Ваше имя"
+									required
+									data-validation-required-message="Введите ваше имя."
+								/>
+								<input
+									type="tel"
+									data-format="+7 (ddd) ddd-dddd"
+									id="CPphone"
+									placeholder="Номер телефона"
+									required
+									data-validation-required-message="Введите ваш номер телефона."
+								/>
+								<input
+									type="email"
+									id="CPemail"
+									placeholder="Email"
+									required
+									data-validation-required-message="Введите ваш электронный адрес."
+								/>
+								<textarea
+									id="CPmessage"
+									placeholder="Сообщение"
+									required
+									data-validation-required-message="Введите ваше сообщение"
+									maxlength="999"
+									rows="6"
+									style="resize: none"
+								></textarea>
+								<button id="CPbtn" type="submit" class="lvl4__btn">
+									Отправить заявку
+									<svg
+										width="17"
+										height="17"
+										viewBox="0 0 17 17"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M16.5201 0.595588C16.0949 0.184079 15.4656 0.0318763 14.8789 0.192937L1.1968 3.93679C0.577744 4.09946 0.138964 4.56412 0.0207656 5.1536C-0.0999838 5.75436 0.321789 6.51779 0.872814 6.83669L5.15092 9.31058C5.58969 9.56505 6.15603 9.50143 6.51913 9.15676L11.418 4.51741C11.6646 4.27502 12.0727 4.27502 12.3193 4.51741C12.566 4.75015 12.566 5.12944 12.3193 5.37103L7.41199 10.0104C7.04804 10.3551 6.98001 10.8898 7.24787 11.3061L9.86184 15.3729C10.168 15.8553 10.6952 16.1299 11.2734 16.1299C11.3414 16.1299 11.418 16.1299 11.486 16.121C12.1493 16.0413 12.6765 15.6137 12.8721 15.0097L16.9282 2.14982C17.1068 1.60222 16.9452 1.00629 16.5201 0.595588Z"
+										/>
+									</svg>
+								</button>
+							</form>
 						</div>
-					</div>
-					<div class="news_el">
-						<img src="./img/news/news1.png" alt="" />
-						<div class="news_el_text">
-							<h3>
-								Фонд имени Шейха Зайеда инвестирует в системы обучения
-								сотрудников киберграмотности
-							</h3>
-							<a href="./news-item.html">Подробнее</a>
-							<time>05 мая 2023</time>
+						<div>
+							<iframe
+								src="https://yandex.ru/map-widget/v1/?ll=45.699269%2C43.313332&mode=whatshere&whatshere%5Bpoint%5D=45.697676%2C43.315100&whatshere%5Bzoom%5D=17&z=15"
+							></iframe>
 						</div>
-					</div>
-					<div class="news_el">
-						<img src="./img/news/news1.png" alt="" />
-						<div class="news_el_text">
-							<h3>
-								Фонд имени Шейха Зайеда инвестирует в системы обучения
-								сотрудников киберграмотности
-							</h3>
-							<a href="./news-item.html">Подробнее</a>
-							<time>05 мая 2023</time>
+						<div class="contact_info">
+							<h3>Информация о нас</h3>
+							<div class="contact_info_grid">
+									<address>
+										<span>Адрес: </span>364000, Чеченская Республика, г. Грозный, Проспект
+									А.А.Кадырова, дом 3/25, этаж 13, секции 3,4
+									</address>
+								<div class="c_info_el">
+									<div class="info_el_img">
+										<img src="./img/contact/tel.png" alt="" />
+									</div>
+									<a href="tel:+7 (8712) 29-10-10">+7 (8712) 29-10-10</a>
+								</div>
+								<div class="c_info_el">
+									<div class="info_el_img">
+										<img src="./img/contact/tel.png" alt="" />
+									</div>
+									<a href="tel:+7 (938) 998-33-33">+7 (938) 998-33-33</a>
+								</div>
+								<div class="c_info_el">
+									<div class="info_el_img">
+										<img src="./img/contact/mail.png" alt="" />
+									</div>
+									<a href="mailto:info@zayedfund.com">info@zayedfund.com</a>
+								</div>
+								<div class="c_info_el">
+									<div class="info_el_img">
+										<img src="./img/contact/work.png" alt="" />
+									</div>
+									<div class="info_worktime_text">
+										<p>
+											График работы: <br />
+											С понедельника по пятницу c <span>9:00 до 18:00</span> <br />
+											Обед с <span>13:00 до 14:00</span>
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
+
+						<div class="contact_text"></div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
 		</main>
 
 		<footer>
