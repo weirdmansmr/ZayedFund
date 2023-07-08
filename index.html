@@ -6,19 +6,21 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
 		<style>
-			.nav_list,
-			.nav_list a,
-			.list_ru,
-			.head_acselerator,
-			.head_requisition {
-				color: #fff !important;
-			}
-			.logo svg {
-				fill: white;
-			}
-			.drop_icon,
-			.logo path {
-				fill: #fff !important;
+			@media (min-width: 952px) {
+				.nav_list,
+				.nav_list a,
+				.list_ru,
+				.head_acselerator,
+				.head_requisition {
+					color: #fff !important;
+				}
+				.logo svg {
+					fill: white;
+				}
+				.drop_icon,
+				.logo path {
+					fill: #fff !important;
+				}
 			}
 		</style>
 	</head>
@@ -26,7 +28,7 @@
 		<header>
 			<div class="wrapper">
 				<div class="logo">
-					<a href="">
+					<a href="./index.html">
 						<svg
 							width="80"
 							height="47"
@@ -111,7 +113,7 @@
 						<li><a href="#">Условия</a></li>
 						<li><a href="#">Проекты</a></li>
 						<li><a href="#">О фонде</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="./contact.html">Контакты</a></li>
 					</ul>
 				</nav>
 				<a class="head_acselerator" href="">Акселератор</a>
@@ -121,6 +123,30 @@
 						<img src="./img/ru.svg" alt="" />
 						<span>RU</span>
 					</div>
+				</div>
+
+				<div class="mobile-menu">
+					<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+					<label for="menu-toggle" class="menu-button">
+						<img class="mobile_icon" src="./img/Decorative Menu.svg" alt="" />
+					</label>
+					<nav class="mobile_nav">
+						<ul>
+							<li><a href="./funding.html">Финансирование</a></li>
+							<li><a href="#">Консультация</a></li>
+							<li><a href="./training.html">Обучение</a></li>
+							<li><a href="#">Сопровождение</a></li>
+							<li><a href="./news.html">Новости</a></li>
+							<li><a href="#">Условия</a></li>
+							<li><a href="#">Проекты</a></li>
+							<li><a href="#">О фонде</a></li>
+							<li><a href="./contact.html">Контакты</a></li>
+						</ul>
+						<div class="mobile_acsreq">
+							<a class="mobile_acs" href="#">Акселератор</a>
+							<a class="mobile_req" href="#">Подать заявку</a>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</header>
