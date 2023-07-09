@@ -412,6 +412,7 @@ h2 {
 
 	h2 {
 		font-size: 38px;
+		word-break: break-all;
 	}
 
 	.rounder {
@@ -437,6 +438,12 @@ h2 {
 		transform: none;
 		color: white;
 		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 470px) {
+	.present__info {
+		justify-content: start;
 	}
 }
 
@@ -493,7 +500,6 @@ h2 {
 }
 
 @media (max-width: 952px) {
-
 	.forwho__grid {
 		grid-template-columns: 1fr;
 		grid-template-areas: none;
@@ -686,8 +692,6 @@ h2 {
 	.hiw_grid__el {
 		height: 400px;
 	}
-
-	
 
 	.grid__banking {
 		grid-area: unset;
@@ -946,15 +950,15 @@ h2 {
 	.serv_grid {
 		grid-template-columns: 1fr;
 	}
-	
+
 	.serv_grid__el {
 		width: 100%;
 		word-wrap: break-word;
 	}
 
-.serv_grid__el h3 {
-	font-size: 30px;
-}
+	.serv_grid__el h3 {
+		font-size: 30px;
+	}
 }
 
 #ourprojects {
@@ -1063,7 +1067,6 @@ h2 {
 }
 
 @media (max-width: 952px) {
-
 	.ourp__header {
 		flex-direction: column;
 		align-items: start;
@@ -1075,7 +1078,7 @@ h2 {
 
 	.ourp_list_item img {
 		width: 90%;
-		height:fit-content;
+		height: fit-content;
 	}
 
 	.sps_grid {
@@ -1086,7 +1089,6 @@ h2 {
 		width: 100%;
 	}
 }
-
 
 footer {
 	background-color: #f4f4f4;
@@ -1541,6 +1543,41 @@ aside {
 	color: #be252a;
 }
 
+@media (max-width: 952px) {
+	.news {
+		padding: 40px 0 0 0;
+	}
+	.news_el {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.news_el img {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+	}
+
+	.news_el .news_el_text {
+		padding: 20px;
+	}
+
+	.news_el time {
+		right: 20px;
+		bottom: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	aside {
+		display: none;
+	}
+
+	.news {
+		grid-template-columns: 1fr;
+	}
+}
+
 /* news end */
 /* news item styles */
 
@@ -1611,6 +1648,34 @@ aside {
 .ni_text p {
 	line-height: 24px;
 	color: #22252ecc;
+}
+
+@media (max-width: 952px) {
+	#news_item {
+		padding: 40px 0 0 0;
+		width: 100%;
+	}
+
+	#same_news {
+		width: 100%;
+		gap: 30px;
+	}
+
+	#news_item h2,
+	#same_news h2 {
+		font-size: 24px;
+		width: 100%;
+		margin: 30px 0 20px 0;
+	}
+
+	.breadcrumb {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.breadcrumb a::after {
+		content: none;
+	}
 }
 
 /* news item end */
@@ -1841,6 +1906,57 @@ aside {
 	margin: 0 0 12px 0;
 }
 
+@media (max-width: 952px) {
+	#edu_present {
+		height: fit-content;
+	}
+
+	#edu_present h1 {
+		word-break: break-all;
+	}
+
+	#edu_present .present__text {
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	#edu_present .present__info {
+		color: #2e2e2e;
+		align-items: start;
+	}
+
+	.serv_grid__el {
+		height: fit-content;
+	}
+
+	.edu_prog__head {
+		flex-direction: column;
+		align-items: start;
+		gap: 10px;
+	}
+
+	.edu_grid {
+		grid-template-columns: 1fr;
+		grid-template-areas: none;
+	}
+
+	.edu_fin {
+		grid-area: unset;
+	}
+
+	.edu_bus {
+		grid-area: unset;
+	}
+
+	.edu_basics {
+		grid-area: unset;
+	}
+
+	.edu_target {
+		grid-area: unset;
+	}
+}
+
 /* end edu */
 /* start funding styles */
 
@@ -1994,6 +2110,12 @@ aside {
 .ft_bottom a:active {
 	color: white;
 	border: 1px solid #6c916c;
+}
+
+@media (max-width: 952px) {
+	.ft_grid {
+		grid-template-columns: 1fr;
+	}
 }
 
 #fundconditions {
@@ -2185,6 +2307,7 @@ aside {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 12px;
+	z-index: 2;
 }
 
 #csltname {
@@ -2203,6 +2326,86 @@ aside {
 	grid-area: 3/1/4/2;
 	height: 50px;
 	margin: 12px 0 0 0;
+}
+
+@media (max-width: 952px) {
+	.fund__main {
+		margin: 120px 0 0 0;
+	}
+
+	.ind_grid {
+		grid-template-columns: 1fr;
+	}
+
+	.ind__prior {
+		grid-area: unset;
+	}
+
+	.ind_grid_el h4 {
+		width: 75%;
+		word-break: break-all;
+	}
+
+	.ind_prior_grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.ind__part {
+		grid-area: unset;
+	}
+
+	.ind__unsup {
+		grid-area: unset;
+	}
+
+	.ind__consult {
+		grid-area: unset;
+	}
+
+	.ind__consult h3 {
+		font-size: 24px;
+		line-height: normal;
+	}
+
+	.ind__consult form {
+		grid-template-columns: 1fr;
+	}
+
+	#csltname {
+		grid-area: unset;
+	}
+
+	#csltphone {
+		grid-area: unset;
+	}
+
+	#csltmessage {
+		grid-area: unset;
+	}
+
+	#csltbtn {
+		grid-area: unset;
+		height: 50px;
+		margin: 12px 0 0 0;
+	}
+
+	.fc_flex {
+		flex-direction: column;
+	}
+
+	.sel_bottom {
+		padding: 32px;
+	}
+
+	.sel_bottom h3 {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 470px) {
+	.ind_prior_grid {
+		grid-template-columns: 1fr;
+	}
 }
 
 /* end funding */
