@@ -85,8 +85,16 @@ a {
 
 h2 {
 	font-size: 54px;
-	font-family: "Century Gothic";
 	font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Century Gothic";
 }
 
 .nav_list a {
@@ -164,6 +172,11 @@ h2 {
 	display: flex;
 	align-items: center;
 	gap: 8px;
+}
+
+.pager {
+	display: flex;
+	justify-content: space-between;
 }
 
 .mobile_btn {
@@ -301,18 +314,58 @@ h2 {
 		display: block;
 	}
 
-	.mobile_acs {
+	.mobile_acsreq button {
+		border: none !important;
+		background-color: transparent;
+		font-size: 18px !important;
+	}
+
+	.mobile_acs,
+	.mobile_req {
 		background-color: #be252a;
+		padding: 5px 10px;
+		display: flex;
+		transition: 0.2s;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		font-family: "Century Gothic";
 	}
 
 	.mobile_acs:hover,
 	.mobile_acs:active {
+		background-color: white;
+		color: #be252a !important;
+		box-shadow: 0px 0px 10px 0px #ffffff;
+	}
+
+	.mobile_acs:hover button,
+	.mobile_acs:active button {
+		border: none !important;
+		background-color: white;
 		color: #be252a !important;
 	}
 
-	.mobile_req {
-		color: #2fb14b !important;
+	.mobile_req:hover,
+	.mobile_req:active {
 		background-color: white;
+		color: #2fb14b !important;
+		box-shadow: 0px 0px 10px 0px #ffffff;
+	}
+
+	.mobile_req:hover button,
+	.mobile_req:active button {
+		border: none !important;
+		background-color: white;
+		color: #2fb14b !important;
+	}
+
+	.mobile_req {
+		background-color: white;
+	}
+
+	.mobile_req button {
+		color: #2fb14b !important;
 	}
 }
 /* header end */
@@ -334,6 +387,10 @@ h2 {
 	border-radius: 50%;
 }
 
+#present .present_back {
+	width: 500px;
+}
+
 .present_back {
 	position: absolute;
 	left: 55%;
@@ -352,7 +409,6 @@ h2 {
 
 .present__text h1 {
 	font-size: 54px;
-	font-family: "Century Gothic";
 	font-weight: 700;
 }
 
@@ -369,6 +425,12 @@ h2 {
 	border-radius: 12px;
 	gap: 48px;
 	box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 350px) {
+	.present__info {
+		padding: 32px 10px;
+	}
 }
 
 .info__el {
@@ -545,7 +607,6 @@ h2 {
 }
 
 .fw_grid__el h3 {
-	font-family: "Century Gothic";
 	font-size: 24px;
 }
 
@@ -589,7 +650,6 @@ h2 {
 }
 
 .hiw_grid__el h3 {
-	font-family: "Century Gothic";
 	font-size: 28px;
 	letter-spacing: -0.5px;
 	z-index: 2;
@@ -840,7 +900,6 @@ h2 {
 }
 
 .bottom_text h3 {
-	font-family: "Century Gothic";
 	font-size: 32px;
 	line-height: 36px;
 }
@@ -849,7 +908,7 @@ h2 {
 	font-size: 14px;
 }
 
-.bottom_text a {
+.bottom_text button {
 	margin: 12px 0 0 0;
 	background-color: #be252a;
 	color: white;
@@ -860,8 +919,8 @@ h2 {
 	transition: 0.2s;
 }
 
-.bottom_text a:hover,
-.bottom_text a:active {
+.bottom_text button:hover,
+.bottom_text button:active {
 	background-color: transparent;
 	color: #be252a;
 	border: 1px solid #be252a;
@@ -918,6 +977,7 @@ h2 {
 	font-size: 36px;
 }
 
+.serv_grid__el button,
 .serv_grid__el a {
 	font-size: 13px;
 	border-radius: 6px;
@@ -927,6 +987,8 @@ h2 {
 	transition: 0.2s;
 }
 
+.serv_grid__el button:hover,
+.serv_grid__el button:active,
 .serv_grid__el a:hover,
 .serv_grid__el a:active {
 	color: white;
@@ -983,6 +1045,7 @@ h2 {
 	font-weight: 400;
 }
 
+.ourp__header button,
 .ourp__header a {
 	color: white;
 	background-color: #be252a;
@@ -993,6 +1056,8 @@ h2 {
 	border: 1px solid transparent;
 }
 
+.ourp__header button:hover,
+.ourp__header button:active,
 .ourp__header a:hover,
 .ourp__header a:active {
 	background-color: transparent;
@@ -1029,7 +1094,6 @@ h2 {
 
 .ourp_item_text h3 {
 	font-size: 36px;
-	font-family: "Century Gothic";
 	letter-spacing: -0.5px;
 	width: 90%;
 	word-wrap: break-word;
@@ -1144,7 +1208,6 @@ footer {
 .lvl2__item h3 {
 	margin: 0 0 4px 0;
 	font-size: 24px;
-	font-family: "Century Gothic";
 }
 
 .lvl2__item a {
@@ -1258,7 +1321,6 @@ footer {
 }
 
 .lvl4__text h3 {
-	font-family: "Century Gothic";
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 24px;
@@ -1470,7 +1532,6 @@ form button:active svg {
 }
 
 .news_el_text h3 {
-	font-family: "Century Gothic";
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 24px;
@@ -1640,6 +1701,10 @@ aside {
 	gap: 16px;
 }
 
+.ni_text li {
+	display: list-item;
+}
+
 .ni_text img {
 	width: 100%;
 	border-radius: 12px;
@@ -1705,7 +1770,7 @@ aside {
 	transform: translateX(-50%);
 }
 
-.edu_main_link {
+#edu_present button {
 	background-color: #396939;
 	color: white;
 	padding: 18px 37px;
@@ -1715,8 +1780,8 @@ aside {
 	transition: 0.2s;
 }
 
-.edu_main_link:hover,
-.edu_main_link:active {
+#edu_present button:hover,
+#edu_present button:active {
 	border: 1px solid #396939;
 	color: #2e2e2e;
 	background-color: transparent;
@@ -1729,7 +1794,6 @@ aside {
 .edu_serv h3 {
 	font-size: 24px;
 	letter-spacing: -0.5px;
-	font-family: "Century Gothic";
 }
 
 .edu_serv p {
@@ -1753,6 +1817,11 @@ aside {
 .edu_sel a:hover,
 .edu_sel a:active {
 	color: white;
+}
+
+.edu_sel button:hover,
+.edu_sel button:active {
+	color: white !important;
 }
 
 .edu_prog__head {
@@ -1807,7 +1876,6 @@ aside {
 .edu_grid__el h3 {
 	color: #2e2e2e;
 	font-size: 32px;
-	font-family: "Century Gothic";
 	line-height: 38px;
 	letter-spacing: -0.5px;
 }
@@ -1960,7 +2028,7 @@ aside {
 /* end edu */
 /* start funding styles */
 
-.fund_main_link {
+.fund__main button {
 	background-color: #be252a;
 	color: white;
 	padding: 18px 37px;
@@ -1970,8 +2038,8 @@ aside {
 	transition: 0.2s;
 }
 
-.fund_main_link:hover,
-.fund_main_link:active {
+.fund__main button:hover,
+.fund__main button:active {
 	border: 1px solid #be252a;
 	color: #2e2e2e;
 	background-color: transparent;
@@ -2005,7 +2073,6 @@ aside {
 	font-size: 24px;
 	line-height: 28px;
 	letter-spacing: -0.5px;
-	font-family: "Century Gothic";
 }
 
 .ft_grid_img {
@@ -2105,11 +2172,19 @@ aside {
 
 .ft_bottom a {
 	background-color: #6c916c;
+	font-size: 14px;
+	color: white;
+	padding: 11.5px 24px;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	transition: 0.2s;
 }
+
 .ft_bottom a:hover,
 .ft_bottom a:active {
 	color: white;
 	border: 1px solid #6c916c;
+	background-color: transparent;
 }
 
 @media (max-width: 952px) {
@@ -2154,7 +2229,6 @@ aside {
 }
 
 .fc_text_cont h5 {
-	font-family: "Century Gothic";
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.5px;
@@ -2207,12 +2281,10 @@ aside {
 	font-size: 20px;
 	line-height: 28px;
 	letter-spacing: -0.5px;
-	font-family: "Century Gothic";
 	margin: 0 0 40px 0;
 }
 
 .ind_grid_el h3 {
-	font-family: "Century Gothic";
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 36px;
@@ -2310,19 +2382,19 @@ aside {
 	z-index: 2;
 }
 
-#csltname {
+.ind_grid_el #name {
 	grid-area: 1/1/2/2;
 }
 
-#csltphone {
+.ind_grid_el #phone {
 	grid-area: 1/2/2/3;
 }
 
-#csltmessage {
+.ind_grid_el #message {
 	grid-area: 2/1/3/3;
 }
 
-#csltbtn {
+.ind_grid_el #btn {
 	grid-area: 3/1/4/2;
 	height: 50px;
 	margin: 12px 0 0 0;
@@ -2436,7 +2508,6 @@ aside {
 
 #contact h3 {
 	font-size: 24px;
-	font-family: "Century Gothic";
 }
 
 #contact form {
@@ -2445,23 +2516,23 @@ aside {
 	gap: 20px;
 }
 
-#CPname {
+#contact #name {
 	grid-area: 1/1/2/3;
 }
 
-#CPphone {
+#contact #phone {
 	grid-area: 2/1/3/2;
 }
 
-#CPemail {
+#contact #email {
 	grid-area: 2/2/3/3;
 }
 
-#CPmessage {
+#contact #message {
 	grid-area: 3/1/4/3;
 }
 
-#CPbtn {
+#contact #btn {
 	grid-area: 4/1/5/3;
 	height: 50px;
 }
@@ -2531,7 +2602,6 @@ aside {
 	#contact {
 		padding: 40px 0 0 0;
 	}
-
 	.contact_grid {
 		grid-template-columns: 1fr;
 	}
@@ -2573,5 +2643,220 @@ aside {
 
 	.contact_info_grid address {
 		grid-area: unset;
+	}
+}
+
+/*  */
+/* about page start */
+
+#aboutfund {
+	padding: 180px 0 0 0;
+}
+
+#ourteam h2,
+#greetings h2 {
+	word-break: keep-all;
+}
+
+.af_el {
+	margin: 40px 0;
+	border: 1px solid #39693926;
+	padding: 40px 30px;
+	border-radius: 20px;
+	transition: 0.2s;
+	position: relative;
+}
+
+.af_el:hover,
+.af_el:active {
+	transform: scale(1.02, 1.02);
+	box-shadow: 0px 0px 20px 0px #0000001a;
+}
+
+.af_el img {
+	width: 300px;
+	border-radius: 8px;
+}
+
+.af_el span {
+	font-weight: 600;
+}
+
+.af_fund img,
+.gt_khakimov img {
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+.af_khalifa img,
+.ot_nowais img {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.af_el h3 {
+	font-size: 24px;
+	margin: 0 0 20px 0;
+}
+
+.af_el p {
+	line-height: 24px;
+	color: #2e2e2ecc;
+	text-align: justify;
+	margin: 8px 0;
+}
+
+.af_el q {
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 700;
+	color: #2e2e2ecc;
+}
+
+.ot_team {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+.ot_team img {
+	width: 100%;
+}
+
+.ot_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+}
+
+.ot_grid_el {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ot_grid_el h4 {
+	font-size: 20px;
+}
+
+.ot_grid_el img {
+	width: 100%;
+}
+
+@media (max-width: 952px) {
+	#aboutfund {
+		padding: 80px 0 0 0;
+	}
+
+	.ot_grid {
+		grid-template-columns: 1fr;
+	}
+
+	.ot_grid_el:nth-child(2) {
+		grid-area: 1/1/1/1;
+	}
+}
+
+@media (max-width: 600px) {
+	.af_el img {
+		width: 100%;
+	}
+
+	.af_el h3 {
+		font-size: 22px;
+	}
+
+	.af_fund img,
+	.gt_khakimov img {
+		float: none;
+		margin: 0;
+	}
+
+	.af_khalifa img,
+	.ot_nowais img {
+		float: none;
+		margin: 0;
+	}
+}
+
+/* end about */
+
+#consultInfo {
+	margin: 40px 0;
+}
+
+.consult_back {
+	bottom: 40px;
+	width: 700px;
+	z-index: 2;
+	left: 50%;
+	top: unset;
+	transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+}
+
+.consult__main {
+	margin: 171px 0 0 0;
+}
+
+.ci_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 40px 0;
+	gap: 40px;
+}
+
+.ci_el {
+	border: 1px solid #39693926;
+	padding: 40px 30px;
+	border-radius: 20px;
+	transition: 0.2s;
+	position: relative;
+	line-height: 24px;
+	text-align: justify;
+}
+
+.ci_el p {
+	color: #2e2e2ecc;
+	margin: 10px 0;
+}
+
+.ci_el h3 {
+	font-size: 24px;
+	margin: 0 0 20px 0;
+	word-break: break-all;
+	text-align: justify;
+}
+
+.ci_el:hover,
+.ci_el:active {
+	transform: scale(1.02, 1.02);
+	box-shadow: 0px 0px 20px 0px #0000001a;
+}
+
+.ci_el img {
+	float: right;
+	width: 160px;
+	margin: 0 0 15px 15px;
+}
+
+@media (max-width: 952px) {
+	.consult__main {
+		margin: 120px 0 0 0;
+	}
+
+	.consult_back {
+		display: none;
+	}
+
+	.ci_grid {
+		grid-template-columns: 1fr;
+	}
+
+	.ci_grid img {
+		float: none;
 	}
 }
