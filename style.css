@@ -42,7 +42,7 @@ header {
 	justify-content: center;
 	font-size: 13px;
 	position: absolute;
-	z-index: 2;
+	z-index: 10;
 }
 
 .logo {
@@ -2858,5 +2858,199 @@ aside {
 
 	.ci_grid img {
 		float: none;
+	}
+}
+
+/* end consulting */
+
+.support_back {
+	bottom: 40px;
+	width: 500px;
+	z-index: 2;
+	left: 50%;
+	top: unset;
+	transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+}
+
+.support__main {
+	margin: 171px 0 0 0;
+}
+
+.support__main button {
+	background-color: #be252a !important;
+}
+
+.support__main button:hover,
+.support__main button:active {
+	background-color: transparent !important;
+	border: 1px solid #be252a !important;
+}
+
+#advantages h2 {
+	margin: 40px 0;
+}
+
+.adv_list {
+	background-color: #be252a08;
+	border-radius: 20px;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.adv_list_el {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.adv_list_el p {
+	color: #2e2e2ecc;
+	line-height: 24px;
+}
+
+.adv_list_el svg {
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	fill: #be252a;
+	border-radius: 8px;
+	background-color: #fff;
+}
+
+.adv_text {
+	margin: 40px 0;
+	padding: 32px;
+	border-radius: 20px;
+	background-color: #f5f8f5;
+	text-align: justify;
+	position: relative;
+	line-height: 24px;
+	color: #2e2e2ecc;
+}
+
+.adv_text svg {
+	position: absolute;
+	width: 150px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.4;
+}
+
+@media (max-width: 952px) {
+	.support_back {
+		display: none;
+	}
+
+	.adv_list_el {
+		gap: 10px;
+	}
+
+	.support__main {
+		margin: 120px 0 0 0;
+	}
+}
+
+@media (max-width: 400px) {
+	.adv_list_el svg {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+/* end support */
+
+#projects {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding: 127px 0 0 0;
+}
+
+#projects h2 {
+	margin: 64px 0 22px 0;
+}
+
+#projects main {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.proj_list {
+	border-radius: 20px;
+	border: 1px solid #2fb14b;
+	padding: 15px 20px;
+	outline: none;
+	color: #396939;
+	font-size: 16px;
+	font-family: "Century Gothic";
+}
+
+.proj_list option {
+	font-family: "Century Gothic";
+}
+
+@media (max-width: 952px) {
+	.proj_list {
+		padding: 10px 15px;
+	}
+}
+
+/* end projects */
+
+#project_item {
+	padding: 127px 0 0 0;
+}
+
+.ni_head_cont {
+	margin: 68px 0 44px 0;
+}
+
+#project_item h2 {
+	font-size: 32px;
+	line-height: 38px;
+	margin: 44px 0 24px;
+}
+
+.pi_grid {
+	display: grid;
+	grid-template-columns: 8fr 4fr;
+	gap: 20px;
+}
+
+.pi_info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.pi_info h3 {
+	font-size: 28px;
+}
+
+.pi_info .c_info_el {
+	gap: 5px;
+}
+
+.pi_info address {
+	line-height: 24px;
+}
+
+.pi_info .lvl3_link_item {
+	align-self: self-start;
+}
+
+@media (max-width: 952px) {
+	#project_item {
+		padding: 40px 0 0 0;
+	}
+	
+	.pi_grid {
+		grid-template-columns: 1fr;
 	}
 }
